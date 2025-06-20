@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TurismoApp.Data;
 
@@ -10,9 +11,11 @@ using TurismoApp.Data;
 namespace TurismoApp.Migrations
 {
     [DbContext(typeof(AgenciaTurismoContext))]
-    partial class AgenciaTurismoContextModelSnapshot : ModelSnapshot
+    [Migration("20250620034435_AjusteCidadeDestino")]
+    partial class AjusteCidadeDestino
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.6");

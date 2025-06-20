@@ -19,7 +19,11 @@
         {
             <tr>
                 <td>@cidade.Id</td>
-                <td>@cidade.Nome</td>
+                <td>
+                    <a asp-page="/CidadesDestino/CidadeDestinoDetails" asp-route-id="@cidade.Id">
+                        @cidade.Nome
+                    </a>
+                </td>
             </tr>
         }
     </tbody>

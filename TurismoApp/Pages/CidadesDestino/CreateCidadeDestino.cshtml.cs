@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TurismoApp.Models;
 using TurismoApp.Data;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace TurismoApp.Pages.CidadesDestino
 {
@@ -20,7 +21,8 @@ namespace TurismoApp.Pages.CidadesDestino
 
         public void OnGet()
         {
-           
+            var paises = _context.PaisesDestino.ToList();
+            ViewData["Paises"] = new SelectList(paises, "Id", "Nome");
         }
 
         public async Task<IActionResult> OnPostAsync()

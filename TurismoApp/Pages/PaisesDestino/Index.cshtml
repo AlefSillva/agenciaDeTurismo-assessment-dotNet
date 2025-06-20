@@ -1,0 +1,28 @@
+﻿@page
+@model TurismoApp.Pages.PaisesDestino.IndexModel
+
+@{
+    ViewData["Title"] = "Lista de Países";
+}
+
+<h2>Lista de Países</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pais in Model.PaisesDestino)
+        {
+            <tr>
+                <td>@pais.Id</td>
+                <td>@pais.Nome</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" asp-page="/PaisesDestino/CreatePaisDestino">Cadastrar Novo País</a>

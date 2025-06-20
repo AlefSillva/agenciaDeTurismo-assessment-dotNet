@@ -1,13 +1,14 @@
 ﻿@page "{id:int}"
-@model TurismoApp.Pages.Cidades.CidadeDestinoDetailsModel
+@model TurismoApp.Pages.CidadesDestino.CidadeDestinoDetailsModel
+
 
 <h2>Detalhes da Cidade</h2>
 
-@if (Model.Cidade != null)
+@if (Model.CidadeDestino != null)
 {
     <div>
-        <p><strong>ID:</strong> @Model.Cidade.Id</p>
-        <p><strong>Nome:</strong> @Model.Cidade.Nome</p>
+        <p><strong>ID:</strong> @Model.CidadeDestino.Id</p>
+        <p><strong>Nome:</strong> @Model.CidadeDestino.Nome</p>
     </div>
 }
 else

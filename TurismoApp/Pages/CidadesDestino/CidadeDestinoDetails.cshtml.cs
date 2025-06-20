@@ -4,7 +4,7 @@ using TurismoApp.Data;
 using TurismoApp.Models;
 using System.Threading.Tasks;
 
-namespace TurismoApp.Pages.Cidades
+namespace TurismoApp.Pages.CidadesDestino
 {
     public class CidadeDestinoDetailsModel : PageModel
     {
@@ -16,13 +16,13 @@ namespace TurismoApp.Pages.Cidades
         }
 
         [BindProperty]
-        public CidadeDestino? Cidade { get; set; }
+        public CidadeDestino? CidadeDestino { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            Cidade = await _context.CidadesDestino.FindAsync(id);
+            CidadeDestino = await _context.CidadesDestino.FindAsync(id); 
 
-            if (Cidade == null)
+            if (CidadeDestino == null)
             {
                 return NotFound();
             }
