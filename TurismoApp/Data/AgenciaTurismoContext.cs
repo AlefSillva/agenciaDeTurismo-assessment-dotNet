@@ -47,7 +47,7 @@ namespace TurismoApp.Data
                 .WithMany(c => c.PacotesTuristicos)
                 .UsingEntity(j => j.ToTable("PacoteCidadeDestino"));
 
-            // Filtro para exclusão lógica de Cliente
+            // Filtro de exclusão lógica de Cliente
             modelBuilder.Entity<Cliente>().HasQueryFilter(c => !c.IsDeleted);
         }
     }

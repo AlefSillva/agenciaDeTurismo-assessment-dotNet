@@ -30,7 +30,7 @@ namespace TurismoApp.Pages.PacotesTuristicos
                 return Page();
             }
 
-            // Garantir que o novo pacote não esteja marcado como excluído
+            
             PacoteTuristico.IsDeleted = false;
 
             _context.PacotesTuristicos.Add(PacoteTuristico);

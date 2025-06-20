@@ -54,12 +54,12 @@ namespace TurismoApp.Pages.PacotesTuristicos
                 return NotFound();
             }
 
-            // Atualizar apenas os campos editáveis
+            
             pacoteExistente.Titulo = PacoteTuristico.Titulo;
             pacoteExistente.DataInicio = PacoteTuristico.DataInicio;
             pacoteExistente.CapacidadeMaxima = PacoteTuristico.CapacidadeMaxima;
             pacoteExistente.Preco = PacoteTuristico.Preco;
-            // NÃO altera IsDeleted aqui — mantido como controle interno
+            
 
             await _context.SaveChangesAsync();
 

@@ -37,7 +37,7 @@ namespace TurismoApp.Pages.Reservas
 
         public async Task<IActionResult> OnGetAsync()
         {
-            // Listar clientes com Nome + Email para evitar confusão
+            
             var clientes = await _context.Clientes
                 .Select(c => new
                 {
