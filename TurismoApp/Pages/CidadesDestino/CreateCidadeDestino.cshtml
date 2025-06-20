@@ -1,0 +1,22 @@
+﻿@page
+@model TurismoApp.Pages.CidadesDestino.CreateCidadeDestinoModel
+
+@{
+    ViewData["Title"] = "Criar Cidade Destino";
+}
+
+<h2>Criar Cidade Destino</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="CidadeDestino.Nome"></label>
+        <input asp-for="CidadeDestino.Nome" class="form-control" />
+        <span asp-validation-for="CidadeDestino.Nome" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

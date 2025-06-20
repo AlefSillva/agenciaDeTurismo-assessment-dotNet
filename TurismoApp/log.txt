@@ -1,0 +1,33 @@
+[File] Nova reserva criada no sistema.
+[File] Iniciando criação de reserva para ClienteId=1 e PacoteId=1.
+[File] Valor total da reserva para 3 dia(s): R$ 1.500,00.
+[File] Reserva criada com sucesso para ClienteId=1 no PacoteId=1.
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Teste de log multicast no Program.cs
+[File] Iniciando criação de reserva para ClienteId=1 e PacoteId=1.
+[File] Valor total da reserva para 5 dia(s): R$ 2.025,00.
+[File] Reserva criada com sucesso para ClienteId=1 no PacoteId=1.
+[File] Iniciando criação de reserva para ClienteId=1 e PacoteId=1.
+[File] Valor total da reserva para 5 dia(s): R$ 2.025,00.
+[File] Reserva criada com sucesso para ClienteId=1 no PacoteId=1.
+[File] Iniciando criação de reserva para ClienteId=1 e PacoteId=1.
+[File] Valor total da reserva para 5 dia(s): R$ 2.025,00.
+[File] Reserva criada com sucesso para ClienteId=1 no PacoteId=1.
+[File] Iniciando criação de reserva para ClienteId=1 e PacoteId=1.
+[File] Valor total da reserva para 5 dia(s): R$ 2.025,00.
+[File] Reserva criada com sucesso para ClienteId=1 no PacoteId=1.
+[File] Teste de log multicast no Program.cs
+[File] Iniciando criação de reserva para ClienteId=1 e PacoteId=2.
+[File] Valor total da reserva para 5 dia(s): R$ 1.350,00.
+[File] Reserva criada com sucesso para ClienteId=1 no PacoteId=2.
+[File] Iniciando criação de reserva para ClienteId=1 e PacoteId=3.
+[File] Valor total da reserva para 7 dia(s): R$ 3.780,00.
+[File] Reserva criada com sucesso para ClienteId=1 no PacoteId=3.

@@ -1,0 +1,36 @@
+﻿@page
+@model TurismoApp.Pages.Notas.ViewNotesModel
+
+
+<h2>Notas</h2>
+
+<form method="post">
+    <textarea asp-for="NewNoteText" rows="5" cols="50" placeholder="Digite sua anotação aqui..."></textarea><br />
+    <button type="submit">Salvar Nota</button>
+</form>
+
+<hr />
+
+<h3>Arquivos disponíveis</h3>
+
+@if (Model.NoteFiles.Count == 0)
+{
+    <p>Nenhuma nota encontrada.</p>
+}
+else
+{
+    <ul>
+        @foreach (var file in Model.NoteFiles)
+        {
+            <li>
+                <a asp-page="./ViewNotes" asp-route-FileToRead="@file">@file</a>
+            </li>
+        }
+    </ul>
+}
+
+@if (!string.IsNullOrEmpty(Model.SelectedContent))
+{
+    <h3>Conteúdo do arquivo selecionado:</h3>
+    <pre>@Model.SelectedContent</pre>
+}

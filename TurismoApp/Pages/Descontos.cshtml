@@ -1,0 +1,53 @@
+﻿@page
+@model TurismoApp.Pages.Descontos.DescontoModel
+
+@{
+    ViewData["Title"] = "Cálculo de Desconto";
+}
+
+<h1>Cálculo de Desconto</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="PrecoDiaria" class="control-label"></label>
+                <input asp-for="PrecoDiaria" class="form-control" type="number" step="0.01" />
+                <span asp-validation-for="PrecoDiaria" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <label asp-for="NumeroDiarias" class="control-label"></label>
+                <input asp-for="NumeroDiarias" class="form-control" type="number" />
+                <span asp-validation-for="NumeroDiarias" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Calcular Desconto" class="btn btn-primary" />
+            </div>
+        </form>
+
+        @if (Model.PrecoTotalCalculado.HasValue)
+        {
+            <h4 class="mt-4">
+                Preço da Diária: @Model.PrecoDiaria.ToString("C")
+            </h4>
+            <h4>
+                Número de Diárias: @Model.NumeroDiarias
+            </h4>
+            <h4>
+                Preço Total (sem desconto): @((Model.PrecoDiaria * Model.NumeroDiarias).ToString("C"))
+            </h4>
+
+            @if (Model.AplicouDesconto)
+            {
+                <h4 class="text-success">
+                    Preço Total com Desconto (10%): @Model.PrecoTotalCalculado.Value.ToString("C")
+                </h4>
+                <p class="text-info">(Desconto de 10% aplicado para mais de 3 diárias)</p>
+            }
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

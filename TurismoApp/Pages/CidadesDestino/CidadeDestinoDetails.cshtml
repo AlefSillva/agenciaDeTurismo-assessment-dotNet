@@ -1,0 +1,18 @@
+﻿@page "{id:int}"
+@model TurismoApp.Pages.Cidades.CidadeDestinoDetailsModel
+
+<h2>Detalhes da Cidade</h2>
+
+@if (Model.Cidade != null)
+{
+    <div>
+        <p><strong>ID:</strong> @Model.Cidade.Id</p>
+        <p><strong>Nome:</strong> @Model.Cidade.Nome</p>
+    </div>
+}
+else
+{
+    <p>Cidade não encontrada.</p>
+}
+
+<a asp-page="/Cidades/CreateCidadeDestino">Voltar ao Cadastro de Cidades</a>

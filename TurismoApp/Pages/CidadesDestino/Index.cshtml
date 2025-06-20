@@ -1,0 +1,28 @@
+﻿@page
+@model TurismoApp.Pages.CidadesDestino.IndexModel
+
+@{
+    ViewData["Title"] = "Lista de Cidades Destino";
+}
+
+<h2>Cidades Destino</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cidade in Model.Cidades)
+        {
+            <tr>
+                <td>@cidade.Id</td>
+                <td>@cidade.Nome</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" asp-page="/CidadesDestino/CreateCidadeDestino">Nova Cidade</a>
